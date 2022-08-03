@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-black flex flex-col justify-top items-center h-screen relative before:bg-[url('./assets/grassbackground.jpeg')] before:bg-top before:bg-cover before:absolute before:inset-0 before:-top-1 before:opacity-50">
+    <div className="bg-black flex flex-col justify-top items-center h-screen relative before:bg-[url('assets/grassbackground.jpeg')] before:bg-top before:bg-cover before:absolute before:inset-0 before:-top-1 before:opacity-50">
       <Header />
       <div className="px-4 py-6 w-full relative flex justify-center overflow-scroll">
         <TileFacet fieldId="pokemon_types" displayName="Type" />

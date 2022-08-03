@@ -8,24 +8,24 @@ interface TileFacetProps {
 
 const TileFacet = ({ fieldId, displayName }: TileFacetProps) => {
   const imageMappings = {
-    water: "/src/assets/watertype.png",
-    flying: "/src/assets/flyingtype.png",
-    normal: "/src/assets/normaltype.png",
-    grass: "/src/assets/grasstype.png",
-    psychic: "/src/assets/psychichtype.png",
-    bug: "/src/assets/bugtype.png",
-    rock: "/src/assets/rocktype.png",
-    electric: "/src/assets/electrictype.png",
-    fire: "/src/assets/firetype.png",
-    poison: "/src/assets/poinsontype.png",
-    ground: "/src/assets/groundtype.png",
-    dragon: "/src/assets/dragontype.png",
-    fighting: "/src/assets/fightingtype.png",
-    dark: "/src/assets/darktype.png",
-    steel: "/src/assets/steeltype.png",
-    ghost: "/src/assets/ghosttype.png",
-    fairy: "/src/assets/fairtytype.png",
-    ice: "/src/assets/icetype.png"
+    water: "assets/watertype.png",
+    flying: "assets/flyingtype.png",
+    normal: "assets/normaltype.png",
+    grass: "assets/grasstype.png",
+    psychic: "assets/psychichtype.png",
+    bug: "assets/bugtype.png",
+    rock: "assets/rocktype.png",
+    electric: "assets/electrictype.png",
+    fire: "assets/firetype.png",
+    poison: "assets/poinsontype.png",
+    ground: "assets/groundtype.png",
+    dragon: "assets/dragontype.png",
+    fighting: "assets/fightingtype.png",
+    dark: "assets/darktype.png",
+    steel: "assets/steeltype.png",
+    ghost: "assets/ghosttype.png",
+    fairy: "assets/fairtytype.png",
+    ice: "assets/icetype.png"
   }
   
   const answersActions = useSearchActions();
