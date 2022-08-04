@@ -1,8 +1,9 @@
-import { useSearchActions, provideHeadless } from "@yext/search-headless-react";
+import { useSearchActions, provideHeadless, useSearchState } from "@yext/search-headless-react";
 import { FocusedItemData, DropdownItem, SearchBar } from "@yext/search-ui-react";
 import classnames from "classnames";
 
 const Header = () => {
+
     const answersActions = useSearchActions();
 
     const entityPreviewSearcher = provideHeadless({
@@ -16,7 +17,7 @@ const Header = () => {
        return ( 
             <div className="flex flex-col items-center cursor-pointer hover:bg-gray-100 ">
                 <img className="w-32" src={pokemon.pokemon_pokemonImageUrl}></img>
-                <div className="font-semibold pl-3">{pokemon.name}</div>
+                <div className="pl-3 capitalize">{pokemon.name}</div>
             </div>
        )
     }

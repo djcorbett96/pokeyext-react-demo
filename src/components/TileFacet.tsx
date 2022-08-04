@@ -48,7 +48,7 @@ const TileFacet = ({ fieldId, displayName }: TileFacetProps) => {
   // component returns null if the facet isn't found in the search state or has no options for a partiaular set of results
   return facet && facet.options.length > 0 ? (
     <div className="w-fit max-w-md p-4 rounded-md bg-white h-fit mr-10 flex flex-col justify-center items-center">
-      <span className="font-bold mb-2">{displayName ?? facet.displayName}</span>
+      <span className="text-neutral-dark text-sm font-medium text-left mb-2">{displayName ?? facet.displayName}</span>
       <div className="flex justify-center flex-wrap p-2">
         {facet.options.map((o, i) => (
           <div
