@@ -1,4 +1,4 @@
-import { Pagination, VerticalResults } from "@yext/search-ui-react";
+import { Pagination, StandardFacets, VerticalResults } from "@yext/search-ui-react";
 import PokemonCard from "./components/cards/PokemonCard";
 import Header from "./components/Header";
 import TileFacet from "./components/TileFacet";
@@ -78,7 +78,3 @@ function App() {
 }
 
 export default App;
-
-function rgba(arg0: number, arg1: number, arg2: number, arg3: number) {
-  throw new Error("Function not implemented.");
-}

@@ -13,6 +13,8 @@ const Header = () => {
         headlessId: "entity-preview-searcher"
     })
 
+    const isNotEmpty = "" !== useSearchState((state) => state.query.input);
+
     const renderPokemonPreview = (pokemon: any) => {
        return ( 
             <div className="flex flex-col items-center cursor-pointer hover:bg-gray-100 ">
@@ -25,13 +27,10 @@ const Header = () => {
     const renderEntityPreviews = (
         autocompleteLoading: boolean,
         verticalKeyToResults: any,
-        dropdownItemProps: {
-            onClick: (value: string, _index: number, itemData?: FocusedItemData) => void;
-        }
     ): JSX.Element | null => {
         const pokemonResults = verticalKeyToResults["pokemon"]?.results.map((result: { rawData: any; }) => result.rawData) as any;
     
-        return pokemonResults ? (
+        return pokemonResults && isNotEmpty ? (
         <div
                     // laying out the product previews in a grid
             className={classnames("grid grid-cols-4 px-8", {
